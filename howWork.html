@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Font awesome 6 -->
+    <!-- <link rel="stylesheet" href="./assets/packages/fontawesome/css/all.min.css">
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- country flag -->
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/styel.css">
+
+</head>
+
+<body style="background-color: #F3F3F3; margin: 0;">
+
+
+    <header>
+        <nav class=" container-lg navbar navbar-expand-lg navbar-light  ">
+
+            <div class="container">
+                <a class="navbar-brand" href="#">Men<span>un</span>izer.</a>
+                <span class="" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="container d-lg-none" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class=" navbar-nav text-center ">
+                    <li class="">
+                        <a class="active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="howWork.html">How It works</a>
+                    </li>
+                </ul>
+                <div class="d-none d-lg-block d-xl-block menunizer-item">
+                    <a class="pe-5 login" href="#">Login</a>
+                    <a class=" menunizer-btn " href="#">Free Trial</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="container p-5 Registrat">
+        <div class="Registrat-head">
+            <h3>Registration</h3>
+            <p>start your FREE 14-days trial now</p>
+        </div>
+        <form class="Registrat-form">
+            <label for="fname">Business Name</label>
+            <input class="form-control" type="text" id="fname" placeholder="Business name">
+
+            <label for="webname">Web page</label>
+            <input class="form-control" type="text" id="webname" placeholder="Businessname.menunizer.com">
+            <div class="Registrat-span">
+                <div class="Register-text">
+                    <div>
+                        <p>business-name.menunizer.com</p>
+                        <p>business-name.menunizer.com</p>
+                    </div>
+                    <div>
+                        <p>business-name.menunizer.com</p>
+                        <p>business-name.menunizer.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <label for="phone">Phone Number</label>
+            <input class="form-control" type="tel" id="phone" name="phone">
+
+            <label for="mail">Business Email</label>
+            <input class="form-control" type="email" id="mail" placeholder="Email Address" required>
+
+            <label for="mypsw">Password</label>
+
+            <input class="form-control mb-3" type="password" id="mypsw">
+
+            <div class="passicon">
+                <i class=" fa-solid fa-eye-slash" id="hide" onclick="myFunction()"></i>
+                <i class="fa-solid fa-eye" id="show" onclick="myFunction()"></i>
+            </div>
+
+            <button class="btn"">Register</button>
+
+
+        </form>
+
+
+    </section>
+
+    <footer>
+        <div class=" container">
+                <div class="row ">
+                    <div class="col-lg-4">
+
+                    </div>
+
+                    <div class="col-lg-4 d-flex align-items-end order-1 order-md-1 order-lg-0  ">
+                        <p>Copyright © 2022 Menunizer.</p>
+                    </div>
+
+                    <div class="col-lg-4 text-end">
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <p>Privacy Policy | Support </p>
+                    </div>
+                </div>
+                </div>
+
+                </footer>
+                <!-- Bootstrap library -->
+                <!-- Custom js -->
+                <script src="./assets/js/main.js"></script>
+                <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+                <script src="build/js/intlTelInput.js"></script>
+                <script>
+                    var input = document.querySelector("#phone");
+                    window.intlTelInput(input, {
+                        // allowDropdown: false,
+                        // autoHideDialCode: false,
+                        // autoPlaceholder: "off",
+                        // dropdownContainer: document.body,
+                        // excludeCountries: ["us"],
+                        // formatOnDisplay: false,
+                        // geoIpLookup: function (callback) {
+                        //     $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                        //         var countryCode = (resp && resp.country) ? resp.country : "";
+                        //         callback(countryCode);
+                        //     });
+                        // },
+                        // hiddenInput: "full_number",
+                        // initialCountry: "auto",
+                        // localizedCountries: { 'de': 'Deutschland' },
+                        // nationalMode: false,
+                        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                        // placeholderNumberType: "MOBILE",
+                        // preferredCountries: ['cn', 'jp'],
+                        // separateDialCode: true,
+                        utilsScript: "build/js/utils.js",
+                    });
+                </script>
+
+</body>
+
+</html>
